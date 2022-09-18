@@ -1,0 +1,5 @@
+fastapi==0.85.0
+jsonify==0.5
+Pillow==9.2.0
+torch==1.12.1
+torchvision==0.13.1
