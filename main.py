@@ -29,7 +29,7 @@ def predict(img,model,class_name,transforms):
 
 # In[4]:
 
-imgdir = r'C:\Users\bleym\Desktop\Dart Practice\Calorifythis\images'
+imgdir = r'C:\Users\bleym\Desktop\Dart Practice\calorifythis\uploadedimages'
 
 app = FastAPI()
 
@@ -53,7 +53,7 @@ async def create_upload_file(file: UploadFile = File(...)):
                     transforms = eff_transforms,
                     class_name = class_name_)
 
-    return {"filename": prediction }
+    return prediction
 
 
 @app.get("/")
